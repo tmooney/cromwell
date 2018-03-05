@@ -27,5 +27,6 @@ case class WorkflowStoreEntry
   submissionTime: Timestamp,
   importsZip: Option[Blob],
   customLabels: Clob,
+  cromwellId: Option[String],
   workflowStoreEntryId: Option[Int] = None
 )

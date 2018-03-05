@@ -48,8 +48,10 @@ trait WorkflowStoreEntryComponent {
 
     def importsZip = column[Option[Blob]]("IMPORTS_ZIP")
 
+    def cromwellId = column[Option[String]]("CROMWELL_ID")
+
     override def * = (workflowExecutionUuid, workflowDefinition, workflowRoot, workflowType, workflowTypeVersion, workflowInputs, workflowOptions, workflowState,
-      restarted, submissionTime, importsZip, customLabels, workflowStoreEntryId.?) <> ((WorkflowStoreEntry.apply _).tupled, WorkflowStoreEntry.unapply)
+      restarted, submissionTime, importsZip, customLabels, cromwellId, workflowStoreEntryId.?) <> ((WorkflowStoreEntry.apply _).tupled, WorkflowStoreEntry.unapply)
 
     def ucWorkflowStoreEntryWeu = index("UC_WORKFLOW_STORE_ENTRY_WEU", workflowExecutionUuid, unique = true)
 
