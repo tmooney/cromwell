@@ -52,7 +52,7 @@ object Dependencies {
   val mockserverNettyV = "3.10.2"
   val mouseV = "0.10-MF"
   val mysqlV = "5.1.42"
-  val nettyHandlerV = "4.0.51.Final"
+  val nettyHandlerV = "4.1.22.Final"
   val paradiseV = "2.1.0"
   val pegdownV = "1.6.0"
   val protoGoogleCommonProtosV = "0.1.21"
@@ -81,7 +81,7 @@ object Dependencies {
   val snakeyamlV = "1.17"
   val specs2MockV = "3.8.9" // 3.9.X doesn't enjoy the spark backend or refined
   val sprayJsonV = "1.3.3"
-  val sttpV = "0.0.16"
+  val sttpV = "1.1.12"
   val swaggerParserV = "1.0.22"
   val swaggerUiV = "3.2.2"
   val typesafeConfigV = "1.3.1"
