@@ -227,6 +227,7 @@ lazy val server = project
   .dependsOn(engine)
   .dependsOn(jesBackend)
   .dependsOn(bcsBackend)
+  .dependsOn(awsBackend)
   .dependsOn(tesBackend)
   .dependsOn(sparkBackend)
   .dependsOn(cromwellApiClient)
