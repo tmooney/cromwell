@@ -151,7 +151,7 @@ GOOGLE_REFRESH_TOKEN_PATH="$(pwd)/jes_refresh_token.txt"
 GOOGLE_SERVICE_ACCOUNT_JSON="$(pwd)/cromwell-service-account.json"
 
 # pass integration directory to the inputs json otherwise remove it from the inputs file
-if [ $RUN_INTEGRATION_TESTS -ne 1 ]; then
+if [ $RUN_INTEGRATION_TESTS -ne 0 ]; then
     INTEGRATION_TESTS=""
 else
     INTEGRATION_TESTS="-i$INTEGRATION_TESTS_DIR"
