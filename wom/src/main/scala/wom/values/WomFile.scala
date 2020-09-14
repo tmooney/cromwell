@@ -365,7 +365,7 @@ case class WomMaybePopulatedFile(valueOption: Option[String] = None,
 
   override def initialize(ioFunctionSet: IoFunctionSet): IOChecked[WomValue] = initializeFunction(this)(ioFunctionSet)
 
-  override def toString: String = List(valueOption, checksumOption, sizeOption, formatOption, contentsOption, secondaryFiles).map(_.toString).mkString(",")
+  override def toString: String = "WomMaybePopulatedFile"
 }
 
 object WomMaybePopulatedFile {
